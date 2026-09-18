@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOBOGO Algérie | Projecteurs de Logo Gobo Haute Définition</title>
+  <meta name="description"
+    content="Projecteurs gobo LED en Algérie pour projection de logo sur façades, trottoirs et événements. Lentille en verre gravée sur mesure, étanche IP67, rotation 360°.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap"
+    rel="stylesheet">
+
+  <script>
+    if (sessionStorage.getItem('gobogo_revealed')) {
+      document.documentElement.classList.add('no-reveal');
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="hero-section" id="hero" aria-label="Présentation des projecteurs GOBOGO">
+
+      <div class="hero-stage" id="heroStage">
+
+        <!-- Off-Screen Beam Ambient Glow (Bleeds smoothly from outside the left bezel) -->
+        <div class="beam-offscreen-glow beam reveal" id="beamOffscreenGlow" aria-hidden="true"></div>
+
+        <!-- Top-Left: Dominant High-Impact Branding & Headline (Pure Monochrome) -->
+        <div class="hero-header-top-left">
+          <div class="hero-brand-name headline reveal">
+            <span class="brand-gobogo">GOBOGO</span>
+          </div>
+          <h1 class="hero-headline headline reveal">
+            Projetez Votre Logo <br>
+            <span class="headline-glow">Haute Définition</span>
+          </h1>
+          <p class="hero-tagline body-text reveal">
+            Transformez façades, trottoirs & événements en enseignes lumineuses spectaculaires. Gravure sur lentille en verre HD sur mesure.
+          </p>
+          <div class="hero-specs-row bullets reveal">
+            <span class="spec-pill">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Étanche IP67
+            </span>
+            <span class="spec-pill">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+              Lentille Verre HD
+            </span>
+            <span class="spec-pill">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              Rotation 360°
+            </span>
+            <span class="spec-pill">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              LED Forte Intensité
+            </span>
+          </div>
+        </div>
+
+        <!-- Volumetric Pure White Light Beam (Shooting in from Left Edge to Logo) -->
+        <div class="beam-diagonal-system beam reveal" id="beamSystem" aria-hidden="true">
+          <!-- Primary Volumetric Conical Projection Beam -->
+          <div class="beam-cone-diagonal"></div>
+
+          <!-- Ambient Pure Light Dispersion Cone -->
+          <div class="beam-ambient-diagonal"></div>
+
+          <!-- Sharp Optical Projection Rays -->
+          <div class="beam-ray ray-top"></div>
+          <div class="beam-ray ray-mid"></div>
+          <div class="beam-ray ray-bot"></div>
+          <div class="beam-ray ray-accent-1"></div>
+          <div class="beam-ray ray-accent-2"></div>
+
+          <!-- Atmospheric Suspended Dust Motes -->
+          <div class="beam-dust">
+            <span class="mote m-1"></span>
+            <span class="mote m-2"></span>
+            <span class="mote m-3"></span>
+            <span class="mote m-4"></span>
+            <span class="mote m-5"></span>
+            <span class="mote m-6"></span>
+          </div>
+        </div>
+
+        <!-- Projected Spinning Logo (Pure Optical White Light Projection) -->
+        <div class="projected-logo-top-right icon reveal" id="projectedLogoArea">
+          <div class="logo-disc-anchor" id="logoDiscAnchor">
+            <!-- Beam Projection Target Disc & Spotlight Glow -->
+            <div class="projected-spotlight-backdrop" aria-hidden="true"></div>
+            <div class="beam-focal-pool" aria-hidden="true"></div>
+            <div class="logo-white-halo" aria-hidden="true"></div>
+            <div class="optical-caustic-ring" aria-hidden="true"></div>
+
+            <div class="weightless-carrier" id="badgeCarrier">
+              <div class="spinning-badge-rotor" id="spinningBadge" role="button" tabindex="0"
+                aria-label="Logo GOBOGO lumineux - Cliquer pour importer votre photo"
+                title="Cliquer pour importer une photo">
+                <div class="gobo-badge-disc" id="goboBadgeDisc">
+                  <!-- Face 1: GOBOGO Bat Vector Logo -->
+                  <div class="badge-face badge-face-logo">
+                    <svg viewBox="0 0 400 400" class="gobogo-bat-svg" id="gobogoVectorSvg"
+                      xmlns="http://www.w3.org/2000/svg" role="img"
+                      aria-label="Logo GOBOGO officiel avec emblème chauve-souris GBG">
+                      <circle cx="200" cy="200" r="192" class="svg-ring-glow" />
+                      <circle cx="200" cy="200" r="185" class="svg-ring-outer-dark" />
+                      <circle cx="200" cy="200" r="170" class="svg-ring-inner-dark" />
+                      <circle cx="200" cy="200" r="168" class="svg-inner-disc" />
+
+                      <g class="svg-bat-group">
+                        <path
+                          d="M 200 112 C 196 125 192 133 188 133 C 182 124 175 112 172 115 C 169 118 170 138 164 140 C 144 132 114 118 78 148 C 103 158 114 186 109 216 C 125 198 143 195 153 206 C 166 220 180 230 200 244 C 220 230 234 220 247 206 C 257 195 275 198 291 216 C 286 186 297 158 322 148 C 286 118 256 132 236 140 C 230 138 231 118 228 115 C 225 112 218 124 212 133 C 208 133 204 125 200 112 Z"
+                          class="svg-bat-body" />
+                        <path
+                          d="M 85 208 C 74 226 84 256 109 256 C 121 256 134 248 141 238 C 151 252 174 256 189 246 C 195 242 199 234 200 228 C 201 234 205 242 211 246 C 226 256 249 252 259 238 C 266 248 279 256 291 256 C 316 256 326 226 315 208 C 292 216 274 210 262 198 C 250 216 232 226 200 242 C 168 226 150 216 138 198 C 126 210 108 216 85 208 Z"
+                          class="svg-clouds" />
+                        <ellipse cx="200" cy="182" rx="55" ry="33" class="svg-gbg-pill" />
+                        <text x="200" y="195" class="svg-gbg-text" text-anchor="middle">GBG</text>
+                        <text x="200" y="294" class="svg-gobogo-text" text-anchor="middle">GOBOGO</text>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <!-- Face 2: Test Your Logo / Import Prompt Face -->
+                  <div class="badge-face badge-face-prompt" aria-hidden="true">
+                    <svg viewBox="0 0 400 400" class="gobogo-bat-svg" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="200" cy="200" r="192" class="svg-ring-glow" />
+                      <circle cx="200" cy="200" r="185" class="svg-ring-outer-dark" />
+                      <circle cx="200" cy="200" r="170" class="svg-ring-inner-dark" />
+                      <circle cx="200" cy="200" r="168" class="svg-inner-disc" />
+
+                      <g class="prompt-artwork-group">
+                        <!-- Upload Cloud / Arrow Icon -->
+                        <g transform="translate(150, 100) scale(4.1)" stroke="#000000" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                          <polyline points="17 8 12 3 7 8" />
+                          <line x1="12" y1="3" x2="12" y2="15" />
+                        </g>
+
+                        <!-- Bold Typography -->
+                        <text x="200" y="238" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="24" letter-spacing="1.5" fill="#000000" text-anchor="middle">TESTEZ VOTRE LOGO</text>
+                        
+                        <!-- Interactive Pill Badge -->
+                        <rect x="105" y="258" width="190" height="34" rx="17" fill="#000000" />
+                        <text x="200" y="280" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="13.5" letter-spacing="1.2" fill="#ffffff" text-anchor="middle">CLIQUEZ ICI</text>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- How-It-Works 3-Step Strip (Bottom Middle) -->
+        <div class="hero-steps-strip steps reveal" id="heroStepsStrip" aria-label="Comment ça marche en 3 étapes simples">
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+            </span>
+            <span class="step-text">Envoyez votre logo</span>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </div>
+
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="12" y1="1" x2="12" y2="4" />
+                <line x1="12" y1="20" x2="12" y2="23" />
+                <line x1="1" y1="12" x2="4" y2="12" />
+                <line x1="20" y1="12" x2="23" y2="12" />
+              </svg>
+            </span>
+            <span class="step-text">On grave la lentille</span>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </div>
+
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <span class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </span>
+            <span class="step-text">Installation</span>
+          </div>
+        </div>
+
+        <!-- Hologram WhatsApp CTA (Anchored Bottom Right) -->
+        <div class="hologram-cta-container buttons reveal" id="heroCtaDock">
+
+          <!-- HERO ONLY: Untouched Original Stage (Locked & Isolated) -->
+          <div class="hero-hologram-stage">
+            <div class="hero-glow-base" aria-hidden="true">
+              <svg viewBox="0 0 340 170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <defs>
+                  <radialGradient id="beam" cx="50%" cy="95%" r="90%">
+                    <stop offset="0%" stop-color="#c9ffd8" stop-opacity="0.95" />
+                    <stop offset="45%" stop-color="#25d366" stop-opacity="0.55" />
+                    <stop offset="100%" stop-color="#25d366" stop-opacity="0" />
+                  </radialGradient>
+                </defs>
+                <polygon points="0,0 340,0 245,170 95,170" fill="url(#beam)" />
+              </svg>
+            </div>
+
+            <a href="https://wa.me/213549153751?text=Bonjour%20GOBOGO,%20je%20souhaite%20commander%20un%20projecteur%20de%20logo"
+              target="_blank" rel="noopener noreferrer" class="hero-hologram-btn" id="cta-commander">
+              <span class="icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z" />
+                </svg>
+              </span>
+              <span class="copy">
+                <span class="title">Commander Mon Projecteur</span>
+                <span class="subtitle">Réponse sous 24h <span class="dot">·</span> Devis gratuit <span class="dot">·</span> WhatsApp</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div> <!-- End hero-stage -->
+    </section>
+
+    <!-- Real-World Proof Section: Placeholders for Customer's Actual Photos -->
+    <section class="gallery-section reveal" id="realisations" aria-label="Emplacements de vos photos réelles">
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <span class="gallery-pill">Résultats en Conditions Réelles</span>
+          <h2 class="gallery-title">Projections Sur Mesure en Algérie</h2>
+          <p class="gallery-desc">Façades d'immeubles, trottoirs commerçants et événements : découvrez où votre logo sera projeté.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Card 1: Façade -->
+          <article class="gallery-card">
+            <div class="card-placeholder-wrap">
+              <div class="placeholder-dashed-frame">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span class="placeholder-main-label">Votre Photo Réelle Ici</span>
+                <span class="placeholder-sub-label">Projection Façade & Bâtiment</span>
+              </div>
+              <span class="card-badge">Façades & Bâtiments</span>
+            </div>
+            <div class="card-content">
+              <div class="card-spec-tags">
+                <span class="tag">Portée jusqu'à 60m</span>
+                <span class="tag">IP67 Étanche</span>
+              </div>
+              <h3 class="card-title">Façades & Bâtiments Commerciaux</h3>
+              <p class="card-text">Projection monumentale haute intensité visible à plus de 50 mètres. Résistant aux intempéries toute l'année.</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Trottoir -->
+          <article class="gallery-card">
+            <div class="card-placeholder-wrap">
+              <div class="placeholder-dashed-frame">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span class="placeholder-main-label">Votre Photo Réelle Ici</span>
+                <span class="placeholder-sub-label">Projection Sol & Trottoir</span>
+              </div>
+              <span class="card-badge">Trottoirs & Entrées</span>
+            </div>
+            <div class="card-content">
+              <div class="card-spec-tags">
+                <span class="tag">Rotation 360°</span>
+                <span class="tag">LED Haute Puissance</span>
+              </div>
+              <h3 class="card-title">Trottoirs & Entrées de Magasins</h3>
+              <p class="card-text">Captez l'attention des passants avec une projection dynamique au sol devant votre restaurant, café ou boutique.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: Événements -->
+          <article class="gallery-card">
+            <div class="card-placeholder-wrap">
+              <div class="placeholder-dashed-frame">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span class="placeholder-main-label">Votre Photo Réelle Ici</span>
+                <span class="placeholder-sub-label">Projection Showroom & Événement</span>
+              </div>
+              <span class="card-badge">Événements & Showrooms</span>
+            </div>
+            <div class="card-content">
+              <div class="card-spec-tags">
+                <span class="tag">Lentille Gravée HD</span>
+                <span class="tag">Rendu Optique Net</span>
+              </div>
+              <h3 class="card-title">Événements, Salons & Showrooms</h3>
+              <p class="card-text">Rendu optique ultra-net sur murs béton, stands d'exposition et soirées d'entreprises pour un impact maximal.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- FOOTER ONLY: Dedicated Separately Named Hologram Component -->
+        <div class="footer-hologram-wrap">
+          <div class="footer-hologram-stage">
+            <div class="footer-glow-base" aria-hidden="true">
+              <svg viewBox="0 0 340 170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <defs>
+                  <radialGradient id="footer-beam" cx="50%" cy="95%" r="90%">
+                    <stop offset="0%" stop-color="#c9ffd8" stop-opacity="0.95" />
+                    <stop offset="45%" stop-color="#25d366" stop-opacity="0.55" />
+                    <stop offset="100%" stop-color="#25d366" stop-opacity="0" />
+                  </radialGradient>
+                </defs>
+                <polygon points="0,0 340,0 245,170 95,170" fill="url(#footer-beam)" />
+              </svg>
+            </div>
+
+            <a href="https://wa.me/213549153751?text=Bonjour%20GOBOGO,%20je%20souhaite%20commander%20un%20projecteur%20de%20logo"
+              target="_blank" rel="noopener noreferrer" class="footer-hologram-btn" id="footer-cta-commander">
+              <span class="footer-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z" />
+                </svg>
+              </span>
+              <span class="footer-copy">
+                <span class="footer-title">Commander Mon Projecteur</span>
+                <span class="footer-subtitle">Réponse sous 24h <span class="dot">·</span> Devis gratuit <span class="dot">·</span> WhatsApp</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer reveal">
+    <div class="footer-bottom-container">
+      <p class="footer-copyright">
+        © 2026 GOBOGO. All rights preserved.
+      </p>
+      <p class="footer-author">
+        Created by
+        <a href="https://www.instagram.com/kl7sr" target="_blank" rel="noopener noreferrer" class="footer-author-link" id="footerAuthorLink">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          kl7sr
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
