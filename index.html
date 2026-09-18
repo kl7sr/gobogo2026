@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <script>
@@ -31,14 +31,12 @@
 
       <div class="hero-stage" id="heroStage">
 
-        <!-- Off-Screen Beam Ambient Glow (Bleeds smoothly from outside the left bezel) -->
+        <!-- Off-Screen Beam Ambient Glow -->
         <div class="beam-offscreen-glow beam reveal" id="beamOffscreenGlow" aria-hidden="true"></div>
 
-        <!-- Top-Left: Dominant High-Impact Branding & Headline (Pure Monochrome) -->
+        <!-- Top-Left: Dominant High-Impact Branding & Headline -->
         <div class="hero-header-top-left">
           <div class="hero-brand-name headline reveal">
-            <span class="brand-k">GBG</span>
-            <span class="brand-sep">·</span>
             <span class="brand-gobogo">GOBOGO</span>
           </div>
           <h1 class="hero-headline headline reveal">
@@ -68,7 +66,7 @@
           </div>
         </div>
 
-        <!-- Volumetric Pure White Light Beam (Shooting in from Left Edge to Logo) -->
+        <!-- Volumetric Pure White Light Beam -->
         <div class="beam-diagonal-system beam reveal" id="beamSystem" aria-hidden="true">
           <!-- Primary Volumetric Conical Projection Beam -->
           <div class="beam-cone-diagonal"></div>
@@ -94,7 +92,7 @@
           </div>
         </div>
 
-        <!-- Projected Spinning Logo (Pure Optical White Light Projection) -->
+        <!-- Projected Spinning Logo -->
         <div class="projected-logo-top-right icon reveal" id="projectedLogoArea">
           <!-- Hidden File Input for Custom Logo Upload -->
           <input type="file" id="logoFileInput" accept="image/*" style="display: none;" aria-hidden="true">
@@ -144,19 +142,16 @@
                       <circle cx="200" cy="200" r="168" class="svg-inner-disc" />
 
                       <g class="prompt-artwork-group">
-                        <!-- Upload Cloud / Arrow Icon -->
                         <g transform="translate(150, 100) scale(4.1)" stroke="#000000" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                           <polyline points="17 8 12 3 7 8" />
                           <line x1="12" y1="3" x2="12" y2="15" />
                         </g>
 
-                        <!-- Bold Typography -->
-                        <text x="200" y="238" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="24" letter-spacing="1.5" fill="#000000" text-anchor="middle">TESTEZ VOTRE LOGO</text>
+                        <text x="200" y="238" font-family="'Space Mono', 'Manrope', sans-serif" font-weight="700" font-size="22" letter-spacing="1.2" fill="#000000" text-anchor="middle">TESTEZ VOTRE LOGO</text>
                         
-                        <!-- Interactive Pill Badge -->
                         <rect x="105" y="258" width="190" height="34" rx="17" fill="#000000" />
-                        <text x="200" y="280" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="13.5" letter-spacing="1.2" fill="#ffffff" text-anchor="middle">CLIQUEZ ICI</text>
+                        <text x="200" y="280" font-family="'Space Mono', 'Manrope', sans-serif" font-weight="700" font-size="13" letter-spacing="1" fill="#ffffff" text-anchor="middle">CLIQUEZ ICI</text>
                       </g>
                     </svg>
                   </div>
@@ -218,10 +213,8 @@
           </div>
         </div>
 
-        <!-- Hologram WhatsApp CTA (Anchored Bottom Right) -->
+        <!-- Hologram WhatsApp CTA (Untouched Original Hologram Stage) -->
         <div class="hologram-cta-container buttons reveal" id="heroCtaDock">
-
-          <!-- HERO ONLY: Untouched Original Stage (Locked & Isolated) -->
           <div class="hero-hologram-stage">
             <div class="hero-glow-base" aria-hidden="true">
               <svg viewBox="0 0 340 170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -267,15 +260,9 @@
         <div class="gallery-grid">
           <!-- Card 1: Façade -->
           <article class="gallery-card">
-            <div class="mock-window-bar">
-              <div class="mock-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mock-url">gobogo.dz/facade</div>
-            </div>
             <div class="card-placeholder-wrap">
               <div class="placeholder-dashed-frame">
-                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
@@ -297,15 +284,9 @@
 
           <!-- Card 2: Trottoir -->
           <article class="gallery-card">
-            <div class="mock-window-bar">
-              <div class="mock-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mock-url">gobogo.dz/trottoir</div>
-            </div>
             <div class="card-placeholder-wrap">
               <div class="placeholder-dashed-frame">
-                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
@@ -327,15 +308,9 @@
 
           <!-- Card 3: Événements -->
           <article class="gallery-card">
-            <div class="mock-window-bar">
-              <div class="mock-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mock-url">gobogo.dz/events</div>
-            </div>
             <div class="card-placeholder-wrap">
               <div class="placeholder-dashed-frame">
-                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                   <circle cx="8.5" cy="8.5" r="1.5"></circle>
                   <polyline points="21 15 16 10 5 21"></polyline>
@@ -392,21 +367,23 @@
     </section>
   </main>
 
-  <!-- Site Footer (Matching Kl7sr Template Style) -->
+  <!-- Site Footer -->
   <footer class="site-footer reveal">
     <div class="footer-bottom-container">
-      <div class="footer-logo" dir="ltr">
-        <span class="k">K</span><span class="rest">l7sr</span><span class="chev">·</span>
-      </div>
-      <a class="insta-link" href="https://instagram.com/kl7sr" target="_blank" rel="noopener" dir="ltr">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <rect x="3" y="3" width="18" height="18" rx="5" />
-          <circle cx="12" cy="12" r="4" />
-          <circle cx="17.2" cy="6.8" r="1" />
-        </svg>
-        <span>@kl7sr</span>
-      </a>
-      <p class="footer-note">© 2026 GOBOGO. All rights preserved.</p>
+      <p class="footer-copyright">
+        © 2026 GOBOGO. All rights preserved.
+      </p>
+      <p class="footer-author">
+        Created by
+        <a href="https://www.instagram.com/kl7sr" target="_blank" rel="noopener noreferrer" class="footer-author-link" id="footerAuthorLink">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          kl7sr
+        </a>
+      </p>
     </div>
   </footer>
 
