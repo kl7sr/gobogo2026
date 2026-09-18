@@ -702,14 +702,21 @@ body {
   justify-content: center;
 }
 
-/* Upright Badge Carrier (Fixed Right-Side Up for Normal Reading) */
+/* Upright Badge Carrier with 360° Continuous Gobo Rotation */
 .spinning-badge-rotor {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   position: relative;
-  transform: none;
+  animation: gobo-spin-slow 24s linear infinite;
+  will-change: transform;
+  transform-origin: center center;
   cursor: pointer;
+}
+
+@keyframes gobo-spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* Circular Badge Disc Graphic (Pure White Glow) */
