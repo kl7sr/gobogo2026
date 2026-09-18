@@ -31,8 +31,7 @@ python -m http.server 3000
 ```
 ├── index.html       # Hero section, gallery, and layout
 ├── style.css        # Theme, typography, beam optics, and animations
-├── main.js          # Beam alignment, file upload, and session logic
-└── assets/          # Gallery images and media
+└── main.js          # Beam alignment, file upload, and session logic
 ```
 
 ## Author
